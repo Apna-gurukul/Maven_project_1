@@ -31,3 +31,7 @@ jobs:
         run: mvn package 
       - name: Maven Sixth Goal integration-test 
         run: mvn integration-test 
+      - name: Maven Seventh Goal verify 
+        run: mvn verify
+      - name: Maven Eighth Goal install
+        run: mvn install 
