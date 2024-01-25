@@ -19,9 +19,15 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Build with Maven
+      - name: Maven First Goal Clean
         run: mvn clean 
-      - name: Build with Maven
+      - name: Maven Second Goal Validate
+        run: mvn validate 
+      - name: Maven Third Goal Compile 
         run: mvn compile 
-      - name: Build with Maven
+      - name: Maven Fourth Goal Test
         run: mvn test 
+      - name: Maven Fifth Goal Package
+        run: mvn package 
+      - name: Maven Sixth Goal integration-test 
+        run: mvn integration-test 
